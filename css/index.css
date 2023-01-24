@@ -96,6 +96,10 @@ main a {
     font-weight: bold;
     border-radius: 10px;
 }
-a:hover {
-    transform: scale(1.1);
+
+/* MEDIA QUERIES */
+@media (hover : hover) {
+    a:hover:not(.no-hover) {
+        transform: scale(1.1);
+    }
 }
