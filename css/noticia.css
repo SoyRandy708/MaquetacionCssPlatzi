@@ -1,0 +1,157 @@
+/* GENERAL */
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+ */
+ :root {
+    --redes-sociales: #47afac;
+    --botones: #47cfac;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    font-size: 1.8rem;    
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* HEADER */
+header {
+    height: 150px;
+}
+header section {
+    display: flex;
+    justify-content: end;
+    background-color: var(--redes-sociales);
+    height: 50px;
+}
+header section div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+}
+header section img {
+    width: 30px;
+    color: white;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    align-items: center;
+    height: 100px;
+}
+header nav img {
+    width: 300px;
+}
+.sobre-mi {
+    margin-right: 80px;
+    justify-self: end;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+/* MAIN */
+.noticia {
+    max-width: 1200px;
+    padding: 0 50px 40px;
+    margin: auto;
+}
+.noticia img {
+    width: 100%;
+}
+.informacion {
+    padding: 0 50px 40px;
+}
+.informacion h3 {
+    margin: 50px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #cdd2da;
+    font-size: 2rem;
+}
+.informacion .titulo {
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.contacto {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    min-height: 300px;
+    background-color: #e6e9ed;
+}
+.contacto-derecha, .contacto-izquierda {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 20px;
+    place-content: center;
+    place-items: center;
+    max-width: 30%;
+}
+.contacto img {
+    width: 100%;
+}
+.contacto a {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.contacto p {
+    margin: 10px 0 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 120px;
+    padding: 0 10px;
+    background-color: #22272d;
+    border-top: 35px solid var(--redes-sociales);
+}
+footer p {
+    color: white;
+}
+
+/* BOTONES */
+a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: black;
+    transition: color .3s, background-color .3s, transform .3s;
+}
+
+
+/* MEDIA QUERIS */
+@media (hover: hover) {
+    a:hover:not(.no-hover) {
+        transform: scale(1.1);
+    }
+}
+@media (max-width: 768px) {
+    header nav img {
+        width: 200px;
+    }
+    .sobre-mi {
+        margin-right: 30px;
+    }
+    .noticia {
+        padding: 0 10px 40px;
+    }
+    .informacion {
+        padding: 0 10px 40px;
+    }
+}
