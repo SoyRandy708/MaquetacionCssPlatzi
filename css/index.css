@@ -103,3 +103,12 @@ main a {
         transform: scale(1.1);
     }
 }
+@media (max-width: 768px) {
+    header nav img {
+        width: 200px;
+    }
+    .sobre-mi {
+        margin-right: 30px;
+    }
+
+}
